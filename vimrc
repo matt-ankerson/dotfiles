@@ -44,6 +44,8 @@ set background=dark
 syntax enable
 colorscheme solarized
 
+set guifont=Hack:h12
+
 " Use fancy symbols for powerline
 let g:Powerline_symbols = 'fancy'
 
@@ -54,6 +56,7 @@ set termencoding=utf-8
 
 " Pymode Config
 let g:pymode = 1
+let g:pymode_rope_complete_on_dot = 0
 let g:pymode_lint_checkers = ['pyflakes', 'pep8']
 
 autocmd FileType python set nowrap
