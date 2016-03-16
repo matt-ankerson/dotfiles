@@ -1,3 +1,5 @@
+" vimrc for os x / linux
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
