@@ -60,6 +60,10 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+" Case features for searching files
+set ignorecase
+set smartcase
+
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
