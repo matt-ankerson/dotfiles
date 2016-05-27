@@ -19,7 +19,8 @@ Plugin 'klen/python-mode'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'ervandew/supertab'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup'
+Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 
 call vundle#end()            " required
 
@@ -48,8 +49,9 @@ autocmd FileType python set nowrap
 
 set guifont=Hack:h12
 
-" Line numbering
-set number
+" UI
+set number        " line numbers on
+set scrolloff=10  " always display 10 lines above and below the cursor
 
 " Tab spacing and indentation
 filetype plugin indent on
