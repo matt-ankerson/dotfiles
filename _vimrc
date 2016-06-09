@@ -18,7 +18,7 @@ Plugin 'L9'
 Plugin 'klen/python-mode'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jelera/vim-javascript-syntax'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'rstacruz/sparkup'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 
