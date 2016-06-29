@@ -1,4 +1,5 @@
-set-alias vim "C:/Program Files (x86)/vim/vim74/./vim.exe"
+#set-alias vim "C:/Program Files (x86)/vim/vim74/./vim.exe"
+set-alias vim "C:/Program Files (x86)/vim/vim74/./gvim.exe"
 set-alias ssh "C:/Program Files/OpenSSH-Win64./ssh"
 set-alias touch New-Item
 

@@ -7,8 +7,8 @@ filetype off " required
 execute pathogen#infect() 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
-set runtimepath^=~\vimfiles\bundle\ctrlp.vim
+"set rtp+=~/vimfiles/bundle/Vundle.vim
+"set $VIMRUNTIME^=~\vimfiles\bundle\
 
 call vundle#begin()
 
@@ -28,6 +28,9 @@ filetype plugin indent on    " required
 
 "----------------------------------
 " Non-Plugin stuff after this line
+
+" Open markdown files with Chrome.
+autocmd BufEnter *.md exe 'noremap <F5> :!start C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %:p<CR>'
 
 " Allow for backspacing over anything in insert mode.
 set backspace=indent,eol,start
@@ -52,6 +55,21 @@ set guifont=Hack:h12
 " UI
 set number        " line numbers on
 set scrolloff=10  " always display 10 lines above and below the cursor
+
+" Behave with windows copy/paste. Use ctrl+Q to enter visual block mode.
+if has("win32")
+    source $VIMRUNTIME/mswin.vim
+    behave mswin
+endif
+
+" Navigating wrapped text
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj
+noremap  <buffer> <silent> 0 g0
+noremap  <buffer> <silent> $ g$
+
+" Show all JSON formatting
+let g:vim_json_syntax_conceal = 0
 
 " Tab spacing and indentation
 filetype plugin indent on
