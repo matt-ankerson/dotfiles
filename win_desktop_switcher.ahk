@@ -100,6 +100,9 @@ mapDesktopsFromRegistry()
 OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
 ; User config!
+
+SetCapsLockState, alwaysoff
+
 ; This section binds the key combo to the switch/create/delete actions
 CapsLock & 1::switchDesktopByNumber(1)
 CapsLock & 2::switchDesktopByNumber(2)
