@@ -1,0 +1,10 @@
+set vb t_vb=                    " disable fucking bell
+set guicursor+=n-v-c:blinkon0   " disable cursor blinking
+set guioptions-=L               " stop window moving when splitting in windows
+set guioptions-=m               " remove menu bar
+set guioptions-=T               " remove toolbar
+set guioptions-=r               " remove right-hand scroll bar
+set guioptions-=L               " remove left-hand scroll bar
+
+set lines=64                    " set window height to 64 lines
+set columns=90                  " set window width to 90 cols
