@@ -9,7 +9,7 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 eval $( dircolors -b $HOME/.dircolors )
 
 # Aliases for colours
-alias ls="ls --color=always" 
+alias ls="ls --color=always --hide='*.pyc'" 
 alias grep="grep --color=always"
 alias egrep="egrep --color=always"
 
