@@ -43,6 +43,9 @@ colorscheme solarized
 set encoding=utf-8
 set termencoding=utf8
 
+" Markdown Config
+autocmd FileType markdown set spell spelllang=en_us
+
 " Pymode Config
 let g:pymode = 1
 let g:pymode_rope_complete_on_dot = 0
