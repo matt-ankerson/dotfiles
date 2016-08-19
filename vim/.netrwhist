@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/matt/Documents/Polytechnic/BITY3/repos/applied_data_science/validation'
+let g:netrw_dirhist_2='/Users/matt/Documents/Polytechnic/BITY3/repos/ads/binary_search_trees'
+let g:netrw_dirhist_3='/Users/matt/Documents/Polytechnic/BITY3/repos/ads/queues'
