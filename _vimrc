@@ -21,6 +21,7 @@ Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'ervandew/supertab'
 Plugin 'rstacruz/sparkup'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+Plugin 'rhysd/vim-grammarous'
 
 call vundle#end()            " required
 
