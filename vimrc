@@ -30,6 +30,14 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Check if has python
+if !has("python")
+    echo 'python NOT loaded'
+    finish
+endif
+" Pathogen
+execute pathogen#infect()
+
 set modelines=0		" CVE-2007-2438
 
 " Normally we use vim-extensions. If you want true vi-compatibility
