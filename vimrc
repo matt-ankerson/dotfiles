@@ -51,6 +51,9 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+set number       " Turn on line numbering
+set scrolloff=10 " Maintain 10 lines above and below the cursor.
+
 " Colour options
 set background=dark
 syntax enable
