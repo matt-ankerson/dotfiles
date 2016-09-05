@@ -31,10 +31,10 @@ filetype plugin indent on
 " Put your non-Plugin stuff after this line
 
 " Check if has python
-if !has("python")
-    echo 'python NOT loaded'
-    finish
-endif
+" if !has("python")
+"    echo 'python NOT loaded'
+"    finish
+"endif
 " Pathogen
 execute pathogen#infect()
 
