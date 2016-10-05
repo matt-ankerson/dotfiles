@@ -21,6 +21,7 @@ Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'ervandew/supertab'
 Plugin 'rstacruz/sparkup'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+Plugin 'rhysd/vim-grammarous'
 
 call vundle#end()            " required
 
@@ -42,6 +43,9 @@ colorscheme solarized
 
 set encoding=utf-8
 set termencoding=utf8
+
+" Markdown Config
+autocmd FileType markdown set spell spelllang=en_us
 
 " Pymode Config
 let g:pymode = 1
