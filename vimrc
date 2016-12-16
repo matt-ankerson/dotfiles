@@ -30,7 +30,18 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Check if has python
+" if !has("python")
+"    echo 'python NOT loaded'
+"    finish
+"endif
+" Pathogen
+execute pathogen#infect()
+
 set modelines=0		" CVE-2007-2438
+
+set number          " line numbers on
+set scrolloff=10    " always display 10 lines above and below the cursor
 
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
@@ -50,6 +61,9 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+set number       " Turn on line numbering
+set scrolloff=10 " Maintain 10 lines above and below the cursor.
 
 " Colour options
 set background=dark
