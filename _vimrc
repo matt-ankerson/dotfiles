@@ -4,7 +4,7 @@ set nocompatible     " be iMproved, required
 filetype off         " required
 
 " Runtime Path Manipulation
-execute pathogen#infect() 
+execute pathogen#infect()
 
 call vundle#begin()
 
@@ -55,6 +55,11 @@ set guifont=Hack:h12
 set number        " line numbers on
 set scrolloff=10  " always display 10 lines above and below the cursor
 set laststatus=2  " airline - always show status line
+
+" Whitespace
+highlight TrailingWhiteSpace ctermbg=19 guibg=#4f5b66
+nnoremap <Leader>dw :%s/\s\+$//e<CR>    " Delete all trailing whitespace in current buffer
+match TrailingWhiteSpace /\s\+$/        " Match trailing whitespace
 
 " Behave with windows copy/paste. Use ctrl+Q to enter visual block mode.
 if has("win32")
