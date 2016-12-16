@@ -1,3 +1,4 @@
+
 #set-alias vim "C:/Program Files (x86)/vim/vim74/./vim.exe"
 set-alias vim "C:/Program Files (x86)/vim/vim74/./gvim.exe"
 set-alias ssh "C:/Program Files/OpenSSH-Win64./ssh"
@@ -27,3 +28,7 @@ $Host.PrivateData.ErrorBackgroundColor = "Black"
 $Host.PrivateData.VerboseForegroundColor = "Yellow"
 
 
+# Load posh-git example profile
+. 'C:\Users\MattA\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+
+$GitPromptSettings.EnableFileStatus = $false

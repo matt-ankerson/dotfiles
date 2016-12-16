@@ -1,14 +1,10 @@
 " vimrc for Windows
 
 set nocompatible     " be iMproved, required
-filetype off " required
+filetype off         " required
 
 " Runtime Path Manipulation
 execute pathogen#infect() 
-
-" set the runtime path to include Vundle and initialize
-"set rtp+=~/vimfiles/bundle/Vundle.vim
-"set $VIMRUNTIME^=~\vimfiles\bundle\
 
 call vundle#begin()
 
@@ -18,10 +14,10 @@ Plugin 'L9'
 Plugin 'klen/python-mode'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jelera/vim-javascript-syntax'
-" Plugin 'ervandew/supertab'
 Plugin 'rstacruz/sparkup'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plugin 'rhysd/vim-grammarous'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()            " required
 
@@ -54,11 +50,11 @@ let g:pymode_lint_checkers = ['pyflakes', 'pep8']
 
 autocmd FileType python set nowrap
 
-set guifont=Hack:h12
-
 " UI
+set guifont=Hack:h12
 set number        " line numbers on
 set scrolloff=10  " always display 10 lines above and below the cursor
+set laststatus=2  " airline - always show status line
 
 " Behave with windows copy/paste. Use ctrl+Q to enter visual block mode.
 if has("win32")
