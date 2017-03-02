@@ -27,6 +27,9 @@ $Host.PrivateData.DebugBackgroundColor = "Black"
 $Host.PrivateData.ErrorBackgroundColor = "Black"
 $Host.PrivateData.VerboseForegroundColor = "Yellow"
 
+# If running .net core on this machine, assume development env
+$Env:ASPNETCORE_ENVIRONMENT = "Development"
+
 
 # Load posh-git example profile
 . 'C:\Users\MattA\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
