@@ -35,3 +35,6 @@ $Env:ASPNETCORE_ENVIRONMENT = "Development"
 . 'C:\Users\MattA\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
 
 $GitPromptSettings.EnableFileStatus = $false
+
+# Load cmder profile
+. 'C:\Users\MattA\dotfiles\cmder_profile.ps1'
