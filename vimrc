@@ -9,7 +9,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'klen/python-mode'
-Plugin 'Lokaltog/powerline'
 Plugin 'altercation/vim-colors-solarized'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 Plugin 'tpope/vim-fugitive'
@@ -17,6 +16,7 @@ Plugin 'L9'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'othree/html5.vim'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 
 filetype plugin indent on
@@ -41,6 +41,7 @@ set modelines=0		" CVE-2007-2438
 
 set number          " line numbers on
 set scrolloff=10    " always display 10 lines above and below the cursor
+set laststatus=2    " airline - always show the status line
 
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
