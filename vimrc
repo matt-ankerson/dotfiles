@@ -36,7 +36,6 @@ filetype plugin indent on
 "    finish
 "endif
 " Pathogen
-execute pathogen#infect()
 
 set modelines=0		" CVE-2007-2438
 

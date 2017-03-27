@@ -3,10 +3,10 @@
 # for examples
 
 # If not running interactively, don't do anything
-#case $- in
-#    *i*) ;;
-#      *) return;;
-#esac
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -116,5 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Some additional colour options
-LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\W\[\033[m\]$(__git_ps1 " (%s)")> '

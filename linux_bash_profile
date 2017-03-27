@@ -1,0 +1,14 @@
+
+# Aliases for colours
+alias ls="ls --color=always --hide='*.pyc'" 
+alias grep="grep --color=always"
+alias egrep="egrep --color=always"
+
+# Customising git
+. ~/.git-completion.bash
+. ~/.git-prompt.sh
+
+# Prompt
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='\w$(__git_ps1 " (%s)")\$ '
+
