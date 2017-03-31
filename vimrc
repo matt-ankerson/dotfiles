@@ -62,6 +62,17 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+" Whitespace
+highlight TrailingWhiteSpace ctermbg=19 guibg=#4f5b66
+nnoremap <Leader>dw :%s/\s\+$//e<CR>    " Delete all trailing whitespace in current buffer
+match TrailingWhiteSpace /\s\+$/        " Match trailing whitespace
+
+" Navigating wrapped text
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj
+noremap  <buffer> <silent> 0 g0
+noremap  <buffer> <silent> $ g$
+
 set number       " Turn on line numbering
 set scrolloff=10 " Maintain 10 lines above and below the cursor.
 
