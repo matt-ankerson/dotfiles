@@ -18,6 +18,7 @@ Plugin 'rstacruz/sparkup'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plugin 'rhysd/vim-grammarous'
 Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 
