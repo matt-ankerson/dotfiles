@@ -79,7 +79,7 @@ set scrolloff=10 " Maintain 10 lines above and below the cursor.
 " Colour options
 set background=dark
 syntax enable
-colorscheme solarized
+" colorscheme solarized
 
 set guifont=Hack:h12
 
