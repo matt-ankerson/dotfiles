@@ -75,7 +75,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    #alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -131,3 +131,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # Development environment setup
 # .net core: (always assume development)
 export ASPNETCORE_ENVIRONMENT=Development
+
+# WSLIntegration with Windows filesystem.
+export CDPATH=~/symlinks
