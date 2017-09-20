@@ -132,5 +132,8 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # .net core: (always assume development)
 export ASPNETCORE_ENVIRONMENT=Development
 
-# WSLIntegration with Windows filesystem.
+# WSL Integration with Windows filesystem.
 export CDPATH=~/symlinks
+
+# WSL Integration with Windows GUI.
+export DISPLAY=:0
