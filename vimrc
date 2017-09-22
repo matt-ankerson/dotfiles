@@ -9,14 +9,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'klen/python-mode'
-Plugin 'altercation/vim-colors-solarized'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
 Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'othree/html5.vim'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
+Plugin 'posva/vim-vue'
 call vundle#end()
 
 filetype plugin indent on
@@ -74,28 +73,39 @@ noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
 
 set number       " Turn on line numbering
-set scrolloff=10 " Maintain 10 lines above and below the cursor.
+"set scrolloff=10 " Maintain 10 lines above and below the cursor.
 
 " Colour options
-set background=dark
+"set background=dark
 syntax enable
-" colorscheme solarized
 
 set guifont=Hack:h12
 
+" Fonts / encoding
 if has("win32")
 	set gfn=Hack:h12
 elseif has("unix")
 	set gfn=Hack:h12
 endif
 
-" Use fancy symbols for powerline
-let g:Powerline_symbols = 'fancy'
-
 set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+
+" Support for .vue files
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 
 " Pymode Config
 let g:pymode = 1
