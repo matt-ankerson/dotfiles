@@ -137,3 +137,6 @@ export CDPATH=~/symlinks
 
 # WSL Integration with Windows GUI.
 export DISPLAY=:0
+
+# Camera problems on macOS
+alias resetcamera='sudo killall AppleCameraAssistant;sudo killall VDCAssistant'
