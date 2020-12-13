@@ -21,22 +21,13 @@ Function Edit-Vimrc
     vim $HOME\_vimrc
 }
 
-# Set working directory
-Set-Location C:\Users\MattA\
-
-# Set background colours for solarized.
-$Host.PrivateData.DebugBackgroundColor = "Black"
-$Host.PrivateData.ErrorBackgroundColor = "Black"
-$Host.PrivateData.VerboseForegroundColor = "Yellow"
-
 # If running .net core on this machine, assume development env
 $Env:ASPNETCORE_ENVIRONMENT = "Development"
 
+# Posh Git
+Import-Module posh-git
 
 # Load posh-git example profile
-. 'C:\Users\MattA\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+#. 'C:\Users\MattA\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
 
 $GitPromptSettings.EnableFileStatus = $false
-
-# Load cmder profile
-. 'C:\Users\MattA\dotfiles\cmder_profile.ps1'
