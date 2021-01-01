@@ -12,13 +12,13 @@ set-alias start-bash startBashFunc
 # (Not that I'll remember this)
 Function Edit-Profile
 {
-    vim $profile
+    code $profile
 }
 
 # To edit Vim settings
 Function Edit-Vimrc
 {
-    vim $HOME\_vimrc
+    code $HOME\_vimrc
 }
 
 # If running .net core on this machine, assume development env
@@ -26,8 +26,3 @@ $Env:ASPNETCORE_ENVIRONMENT = "Development"
 
 # Posh Git
 Import-Module posh-git
-
-# Load posh-git example profile
-#. 'C:\Users\MattA\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
-
-$GitPromptSettings.EnableFileStatus = $false
